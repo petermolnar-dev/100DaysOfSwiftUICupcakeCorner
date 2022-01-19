@@ -13,6 +13,7 @@
 		5A93441C27981A4C00019F73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A93441B27981A4C00019F73 /* Preview Assets.xcassets */; };
 		5ADF945427981D7C004A2AAE /* iTunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF945327981D7C004A2AAE /* iTunesListView.swift */; };
 		5ADF945627982282004A2AAE /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF945527982282004A2AAE /* AsyncImageView.swift */; };
+		5ADF9458279824E4004A2AAE /* FormValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF9457279824E4004A2AAE /* FormValidationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5A93441B27981A4C00019F73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5ADF945327981D7C004A2AAE /* iTunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesListView.swift; sourceTree = "<group>"; };
 		5ADF945527982282004A2AAE /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		5ADF9457279824E4004A2AAE /* FormValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5A93441827981A4C00019F73 /* Assets.xcassets */,
 				5A93441A27981A4C00019F73 /* Preview Content */,
 				5ADF945527982282004A2AAE /* AsyncImageView.swift */,
+				5ADF9457279824E4004A2AAE /* FormValidationView.swift */,
 			);
 			path = CupcakeCorner;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				5A93441527981A4200019F73 /* CupcakeCornerApp.swift in Sources */,
 				5ADF945427981D7C004A2AAE /* iTunesListView.swift in Sources */,
 				5ADF945627982282004A2AAE /* AsyncImageView.swift in Sources */,
+				5ADF9458279824E4004A2AAE /* FormValidationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
