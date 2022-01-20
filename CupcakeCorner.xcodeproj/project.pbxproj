@@ -14,6 +14,10 @@
 		5ADF945427981D7C004A2AAE /* iTunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF945327981D7C004A2AAE /* iTunesListView.swift */; };
 		5ADF945627982282004A2AAE /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF945527982282004A2AAE /* AsyncImageView.swift */; };
 		5ADF9458279824E4004A2AAE /* FormValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF9457279824E4004A2AAE /* FormValidationView.swift */; };
+		5AEBCFA127996E97003F32D3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA027996E97003F32D3 /* Order.swift */; };
+		5AEBCFA327996F65003F32D3 /* ObservableWithCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */; };
+		5AEBCFA527997207003F32D3 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA427997207003F32D3 /* AddressView.swift */; };
+		5AEBCFA7279972D0003F32D3 /* Checkoutview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA6279972D0003F32D3 /* Checkoutview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		5ADF945327981D7C004A2AAE /* iTunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesListView.swift; sourceTree = "<group>"; };
 		5ADF945527982282004A2AAE /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		5ADF9457279824E4004A2AAE /* FormValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationView.swift; sourceTree = "<group>"; };
+		5AEBCFA027996E97003F32D3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableWithCodable.swift; sourceTree = "<group>"; };
+		5AEBCFA427997207003F32D3 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		5AEBCFA6279972D0003F32D3 /* Checkoutview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkoutview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +67,15 @@
 			children = (
 				5A93441427981A4200019F73 /* CupcakeCornerApp.swift */,
 				5A93441627981A4200019F73 /* ContentView.swift */,
+				5AEBCFA6279972D0003F32D3 /* Checkoutview.swift */,
+				5AEBCFA427997207003F32D3 /* AddressView.swift */,
 				5ADF945327981D7C004A2AAE /* iTunesListView.swift */,
 				5A93441827981A4C00019F73 /* Assets.xcassets */,
 				5A93441A27981A4C00019F73 /* Preview Content */,
 				5ADF945527982282004A2AAE /* AsyncImageView.swift */,
 				5ADF9457279824E4004A2AAE /* FormValidationView.swift */,
+				5AEBCFA027996E97003F32D3 /* Order.swift */,
+				5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */,
 			);
 			path = CupcakeCorner;
 			sourceTree = "<group>";
@@ -146,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEBCFA127996E97003F32D3 /* Order.swift in Sources */,
+				5AEBCFA7279972D0003F32D3 /* Checkoutview.swift in Sources */,
+				5AEBCFA327996F65003F32D3 /* ObservableWithCodable.swift in Sources */,
 				5A93441727981A4200019F73 /* ContentView.swift in Sources */,
 				5A93441527981A4200019F73 /* CupcakeCornerApp.swift in Sources */,
 				5ADF945427981D7C004A2AAE /* iTunesListView.swift in Sources */,
+				5AEBCFA527997207003F32D3 /* AddressView.swift in Sources */,
 				5ADF945627982282004A2AAE /* AsyncImageView.swift in Sources */,
 				5ADF9458279824E4004A2AAE /* FormValidationView.swift in Sources */,
 			);
