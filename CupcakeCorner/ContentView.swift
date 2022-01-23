@@ -8,39 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var order = Order()
+    @StateObject var orderStore = OrderStore()
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    Picker("Select your cake type", selection: $order.type) {
+                    Picker("Select your cake type", selection: $orderStore.order.type) {
                         ForEach(Order.types.indices) {
                             Text(Order.types[$0])
                         }
                     }
                     
-                    Stepper("Number of cakes: \(order.quantity)", value: $order.quantity, in: 3...20)
+                    Stepper("Number of cakes: \(orderStore.order.quantity)", value: $orderStore.order.quantity, in: 3...20)
                 }
                 
                 Section {
-                    Toggle("Any special requests?", isOn: $order.specialRequestEnabled.animation())
+                    Toggle("Any special requests?", isOn: $orderStore.order.specialRequestEnabled.animation())
                     
-                    if order.specialRequestEnabled {
-                        Toggle("Add estra frosting", isOn: $order.extraFrosting)
+                    if orderStore.order.specialRequestEnabled {
+                        Toggle("Add estra frosting", isOn: $orderStore.order.extraFrosting)
                         
-                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                        Toggle("Add extra sprinkles", isOn: $orderStore.order.addSprinkles)
                     }
                 }
                 
                 Section {
                     NavigationLink {
-                        AddressView(order: order)
+                        AddressView(orderStore: orderStore)
                     } label: {
                         Text("Delivery details")
                     }
                 }
-                .disabled(order.quantity < 1)
+                .disabled(orderStore.order.quantity < 1)
             }
             .navigationTitle("Cupcake Corner")
         }

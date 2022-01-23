@@ -18,6 +18,7 @@
 		5AEBCFA327996F65003F32D3 /* ObservableWithCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */; };
 		5AEBCFA527997207003F32D3 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA427997207003F32D3 /* AddressView.swift */; };
 		5AEBCFA7279972D0003F32D3 /* Checkoutview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEBCFA6279972D0003F32D3 /* Checkoutview.swift */; };
+		C7C838CC279DE5E700BA0B59 /* OrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C838CB279DE5E700BA0B59 /* OrderStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableWithCodable.swift; sourceTree = "<group>"; };
 		5AEBCFA427997207003F32D3 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		5AEBCFA6279972D0003F32D3 /* Checkoutview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkoutview.swift; sourceTree = "<group>"; };
+		C7C838CB279DE5E700BA0B59 /* OrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				5ADF945527982282004A2AAE /* AsyncImageView.swift */,
 				5ADF9457279824E4004A2AAE /* FormValidationView.swift */,
 				5AEBCFA027996E97003F32D3 /* Order.swift */,
+				C7C838CB279DE5E700BA0B59 /* OrderStore.swift */,
 				5AEBCFA227996F65003F32D3 /* ObservableWithCodable.swift */,
 			);
 			path = CupcakeCorner;
@@ -162,6 +165,7 @@
 				5AEBCFA7279972D0003F32D3 /* Checkoutview.swift in Sources */,
 				5AEBCFA327996F65003F32D3 /* ObservableWithCodable.swift in Sources */,
 				5A93441727981A4200019F73 /* ContentView.swift in Sources */,
+				C7C838CC279DE5E700BA0B59 /* OrderStore.swift in Sources */,
 				5A93441527981A4200019F73 /* CupcakeCornerApp.swift in Sources */,
 				5ADF945427981D7C004A2AAE /* iTunesListView.swift in Sources */,
 				5AEBCFA527997207003F32D3 /* AddressView.swift in Sources */,

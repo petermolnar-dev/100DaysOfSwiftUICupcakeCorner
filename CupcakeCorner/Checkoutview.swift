@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct Checkoutview: View {
-    @ObservedObject var order: Order
+    @ObservedObject var orderStore: OrderStore
     @State private var confirmationMessage = ""
+    let submitErrorMessage = "Hmm, something went wrong..."
     @State private var showingConfirmation = false
+    @State private var showingNetworkError = false
     
     var body: some View {
         ScrollView {
@@ -24,7 +26,7 @@ struct Checkoutview: View {
                 }
                 .frame(height: 233)
                 
-                Text("Your total is \(order.cost, format:  .currency(code: "USD"))")
+                Text("Your total is \(orderStore.order.cost, format:  .currency(code: "USD"))")
                     .font(.title)
                 
                 Button("Place Order") {
@@ -42,10 +44,15 @@ struct Checkoutview: View {
         } message: {
             Text(confirmationMessage)
         }
+        .alert("Oops, something went wrong", isPresented: $showingNetworkError) {
+            Button("OK") {}
+        } message: {
+            Text(submitErrorMessage)
+        }
     }
     
     func placeOrder() async {
-        guard let encoded = try? JSONEncoder().encode(order) else {
+        guard let encoded = try? JSONEncoder().encode(orderStore.order) else {
             print("Failed to encode order.")
             return
         }
@@ -62,13 +69,14 @@ struct Checkoutview: View {
             confirmationMessage = "Your order for \(decodeOrder.quantity)x \(Order.types[decodeOrder.type]) cupcakes is no the way."
             showingConfirmation = true
         } catch  {
-            print("Checkout failed \(error)")
+            print("Something went wrong: \(error)")
+            showingNetworkError = true
         }
     }
 }
 
 struct Checkoutview_Previews: PreviewProvider {
     static var previews: some View {
-        Checkoutview(order: Order())
+        Checkoutview(orderStore: OrderStore())
     }
 }
